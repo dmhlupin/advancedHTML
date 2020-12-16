@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrap {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* =================== Общие  ===========================*/
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* ============== header block ==========================*/
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.headerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoText {
+    margin-left: 9px;
+    margin-right: 35px;
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #222222;
+}
+
+.logoText span {
+    font-weight: 900;
+    color: #f16d7f;
+}
+
+.search {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.browseButton {
+    height: 38px;
+    min-width: 87px;
+    text-align: left;
+    padding: 3px 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px 0px 0px 3px;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #838383;
+}
+
+.browseButton:hover {
+    background-color: #f16d7f;
+    color: #ffffff;
+}
+
+.searchInput {
+    margin: 0;
+    min-height: 38px;
+    width: 279px;
+    border: 1px solid #e6e6e6;
+    margin-right: -4px;
+    margin-left: -1px;
+    padding-left: 16px;
+}
+
+.searchButton {
+    margin: 0;
+    margin-left: -1px;
+    min-height: 38px;
+    width: 38px;
+    border: 1px solid #e6e6e6;
+    border-radius: 0px 3px 3px 0px;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #a4a4a4;
+}
+
+.searchButton:hover {
+    background-color: #f16d7f;
+    color: #ffffff;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.addToCart {
+    margin-right: 26px;
+}
+
+.accountButton {
+    width: 130px;
+    height: 38px;
+    background-color: #f16d7f;
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    border: none;
+}
+
+.accountButton:hover {
+    outline: 1px solid #f16d7f;
+    color: #f16d7f;
+    background-color: #ffffff;
+}
+
+
+/* =============== mainMenu block ========================*/
+
+.mainMenu {}
+
+.mainMenuItems {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainMenuItem {
+    margin: 0 20px;
+}
+
+.mainMenuLinks {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+
+/* ============== slider block ==================*/
+
+.slider {
+    background-image: url(../img/image_frame_84.jpg);
+    height: 665px;
+}
+
+.slider > .wrap {
+    position: relative;
+}
+
+.sliderContent {
+    position: absolute;
+    top: 224px;
+    left: 15px;
+    border-left: 12px solid #f16d7f;
+    padding-left: 12px;
+}
+
+.biggestSlogan {
+    margin: 0;
+    margin-top: -15px;
+    line-height: 0.7;
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.detailedSlogan {
+    margin-top: 0;
+    margin-bottom: -8px;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.detailedSlogan > span {
+    color: #f16d7f;
+}
+
+
+/* ========  HotDeals block ================*/
+
+.hotDealsContainer {
+    padding-top: 98px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.horizontalBlock {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 560px;
+    min-height: 823px;
+    margin: 0;
+}
+
+.hotDealItem {
+    display: block;
+    width: 560px;
+    padding-top: 26px;
+}
+
+.hotDealItemBig {
+    height: 542px;
+    background-color: #000000;
+}
+
+.hotDealItemSmall {
+    height: 261px;
+    background-color: #dadad2;
+}
+
+.hotDealForMen {
+    background-image: url(../img/rectangle_19_1130.jpg)
+}
+
+.hotDealLuxirous {
+    background-image: url(../img/rectangle_19_copy_3_1144.jpg)
+}
+
+.hotDealOffer {
+    background-image: url(../img/rectangle_19_copy_1136.jpg)
+}
+
+.hotDealForKid {
+    background-image: url(../img/rectangle_19_copy_2_1137.jpg)
+}
+
+.hotDealTitleBlock {
+    display: inline-block;
+    margin: 0;
+    max-width: 250px;
+    min-height: 82px;
+    background-color: #ffffff;
+    padding: 16px 0px 12px 19px;
+}
+
+.titleContainer {
+    margin-right: 20px;
+}
+
+.titleText {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #222222;
+    margin: 0;
+}
+
+.titleTextBold {
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-size: 30px;
+    color: #f16d7f;
+    margin: 0;
+}
+
+
+/* ========  Featured block ================*/
+
+.featuredContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.featuredTitle {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.featuredHeader {
+    font-size: 30px;
+    line-height: 54px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #222222;
+    margin: 0;
+}
+
+.featuredHeaderContent {
+    font-size: 14px;
+    line-height: 54px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #9f9f9f;
+    margin: 0;
+    margin-top: -20px;
+}
+
+.featuredItemsBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.featuredItem {
+    min-width: 23%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.itemDescription {
+    padding: 5px 0 5px 13px;
+}
+
+.itemDescText {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.itemPrice {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f16d7f;
+}
+
+.featuredButton {
+    display: block;
+    margin: 0 auto;
+    width: 212px;
+    height: 48px;
+    background-color: #f16d7f;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.featuredButton span {
+    line-height: 48px;
+}
