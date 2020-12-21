@@ -1,0 +1,155 @@
+// out: null
+
+/* ============== header block ==========================*/
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.headerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoText {
+    margin-left: 9px;
+    margin-right: 35px;
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #222222;
+}
+
+.logoText span {
+    font-weight: 900;
+    color: #f16d7f;
+}
+
+.search {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.browseButton {
+    height: 38px;
+    min-width: 87px;
+    text-align: left;
+    padding: 3px 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px 0px 0px 3px;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #838383;
+    .changeColorMixin();
+}
+
+.browseButton:hover {
+    background-color: #f16d7f;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.searchInput {
+    margin: 0;
+    min-height: 38px;
+    width: 279px;
+    border: 1px solid #e6e6e6;
+    margin-right: -4px;
+    margin-left: -1px;
+    padding-left: 16px;
+}
+
+.searchButton {
+    margin: 0;
+    margin-left: -1px;
+    min-height: 38px;
+    width: 38px;
+    border: 1px solid #e6e6e6;
+    border-radius: 0px 3px 3px 0px;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #a4a4a4;
+    .changeColorMixin();
+    position: relative;
+}
+@import "eyes.less";
+
+.searchButton:hover {
+    background-color: #f16d7f;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.addToCart {
+    margin-right: 26px;
+}
+
+.accountButton {
+    width: 130px;
+    height: 38px;
+    background-color: #f16d7f;
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    border: none;
+    .changeColorMixin();
+}
+
+.accountButton:hover {
+    outline: 1px solid #f16d7f;
+    color: #f16d7f;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+
+/* =============== mainMenu block ========================*/
+
+.mainMenuItems {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.mainMenuItem {
+    height: 45px;
+}
+
+.mainMenuItem:hover {
+    border-bottom: 3px solid #f16d7f;
+}
+
+.mainMenuLinks {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    padding-left: 26px;
+    padding-right: 26px;
+}
