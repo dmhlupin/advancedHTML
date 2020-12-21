@@ -1,0 +1,42 @@
+.eyesContainer {
+    position: absolute;
+    top: 270px;
+    right: -265px;
+    display: flex;
+    justify-content: center;
+    opacity:0;
+}
+
+.eye {
+    border-radius: 50%;
+    border: 1px solid #444444;
+    background-color: #fff;
+    width: 20px;
+    height: 25px;
+    position: relative;
+    margin-left: 25px;
+}
+
+.centerEye {
+    position:absolute;
+    top: 40%;
+    left:0px;
+    border-radius: 50%;
+    background-color: #444444;
+    width:10px;
+    height: 10px;
+}
+.searchButton:hover .eyesContainer {
+    opacity: 100%;
+}
+.searchButton:hover .centerEye {
+    animation: eyesAnimation 0.8s 100;
+}
+
+@keyframes eyesAnimation {
+    0% {left: 0px;}
+    50% {
+        left:10px;
+    }
+    100% {left: 0px;}
+}

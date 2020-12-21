@@ -1,0 +1,58 @@
+//out: none
+
+@import "__variables.less";
+.fontForHeading() {
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.015em;
+}
+
+.cartValuesTextStyle() {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #656565;
+}
+
+.inputBgBorderStyle() {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+}
+
+.buttonsTextStyle() {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.whiteButtonsHover() {
+    background-color: @mainPinkColor;
+    border: 1px solid @mainPinkColor;
+    color: #fff;
+}
+
+.pinkButton() {
+    background-color: @mainPinkColor;
+    color: #fff;
+    border: 1px solid @mainPinkColor;
+}
+.pinkButtonHover() {
+    background-color: #fff;
+    color: @mainPinkColor;
+}
+
+.scaleMixin() {
+    transform: scale(1.2);
+}
+.rotateMixin() {
+    transform: rotate(360deg);
+}
+.changeColorMixin() {
+    transition: background-color 0.5s, color 0.5s;
+}
+.visibilityMixin() {
+    transition: opacity 0.5s;
+}
