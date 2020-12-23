@@ -1,0 +1,152 @@
+@import "__variables.less";
+@import "__mixins.less";
+
+
+
+.checkoutSection {
+    margin-top: 50px;
+    margin-bottom: 93px;
+}
+.checkoutAccordeon {
+    border-bottom: 1px solid #e8e8e8;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.checkoutRegisterBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkoutRegisterBlock .checkoutRegister,
+.checkoutRegisterBlock .checkoutAlreadyRegisted {
+    width: 50%;
+}
+
+.checkoutAccordeonTitle {
+    .buttonsTextStyle();
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.checkoutAccordeonTitle::-webkit-details-marker {
+    display: none;
+}
+
+.checkoutColumn {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 35px 35px;
+}
+
+.checkoutFormTitle {
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222222;
+    margin-bottom: 10px;
+}
+
+.checkoutFormComment,
+.formRegisterAccordeonTitle {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #b3b2b2;
+    text-transform: capitalize;
+}
+
+.checkoutFormComment {
+    margin-bottom: 20px;
+}
+
+.formRegisterAccordeonTitle {
+    margin-bottom: 10px;
+}
+
+.checkoutRadioBlock {
+    padding: 8px 0;
+}
+
+.checkoutFormSaveTime {
+    margin-top: 20px;
+}
+
+.formRegisterAccordeonTitle::-webkit-details-marker {
+    display: none;
+}
+
+.formRegisterAccordeonTitle::before {
+    font-family: FontAwesome;
+    content: "\f101";
+}
+
+.formRegisterAccordeonTitle[open]::before {
+    font-family: FontAwesome;
+    content: "\f100";
+}
+
+.registerFormButton {
+    width: 180px;
+    height: 50px;
+    .buttonsTextStyle();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+.registerFormButton:hover {
+    .whiteButtonsHover();
+}
+
+.checkoutLabel {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222222;
+    margin-bottom: 13px;
+}
+
+.checkoutLabel span {
+    color: #ff0d0d;
+    font-size: 17px;
+}
+
+.checkoutTextInput {
+    .inputBgBorderStyle();
+    width: 390px;
+    height: 45px;
+    margin-bottom: 15px;
+    padding-left: 12px;
+}
+
+.pinkComment {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ff0d0d;
+    margin-bottom: 12px;
+}
+.checkoutButtonBlock {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.forgotPassword {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #222222;
+    text-transform: capitalize;
+    margin: 30px 0 0 32px;
+    cursor: pointer;
+}
+.forgotPassword:hover {
+    color: @mainPinkColor;
+}
