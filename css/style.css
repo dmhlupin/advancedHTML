@@ -161,12 +161,11 @@ li {
   letter-spacing: 0.025em;
   color: #a4a4a4;
   transition: background-color 0.5s, color 0.5s;
-  position: relative;
 }
 .eyesContainer {
   position: absolute;
   top: 270px;
-  right: -265px;
+  right: 83px;
   display: flex;
   justify-content: center;
   opacity: 0;
@@ -189,10 +188,10 @@ li {
   width: 10px;
   height: 10px;
 }
-.searchButton:hover .eyesContainer {
+.searchButton:hover ~ .eyesContainer {
   opacity: 100%;
 }
-.searchButton:hover .centerEye {
+.searchButton:hover ~ .eyesContainer .centerEye {
   animation: eyesAnimation 0.8s 100;
 }
 @keyframes eyesAnimation {
