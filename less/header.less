@@ -1,0 +1,392 @@
+// out: null
+
+/* ============== header block ==========================*/
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.headerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoText {
+    margin-left: 9px;
+    margin-right: 35px;
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #222222;
+}
+
+.logoText span {
+    font-weight: 900;
+    color: #f16d7f;
+}
+
+.search {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.browseButton {
+    background-color: #f8f8f8;
+    height: 38px;
+    min-width: 87px;
+    text-align: left;
+    padding: 3px 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px 0px 0px 3px;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #838383;
+    .changeColorMixin();
+}
+
+.browseButton span {
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #222222;
+}
+
+.browseButton i {
+    color: #f8f8f8;
+}
+
+.dropBrowse {
+    width: 262px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    z-index: -5;
+    transform: scaleY(0);
+    padding: 0 15px 15px 15px;
+}
+
+.dropBrowseHeading {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #232323;
+    margin: 5px 0;
+    padding-top: 5px;
+}
+
+.dropBrowseList {
+    padding: 0 5px;
+    margin: 0;
+}
+
+.dropBrowseItem {
+    padding: 0;
+    margin: 0;
+    height: 28px;
+}
+
+.dropDownLink {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #4f4f4f;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.dropDownLink:hover {
+    color: @mainPinkColor;
+}
+
+.browseButton:hover {
+    background-color: #f16d7f;
+    cursor: pointer;
+}
+
+.browseButton:hover span {
+    color: #ffffff;
+}
+
+.browseButton:hover i {
+    color: #ffffff;
+}
+
+.browseButton:hover .dropBrowse {
+    z-index: 5;
+    transform: scaleY(1);
+}
+
+.searchInput {
+    margin: 0;
+    min-height: 38px;
+    width: 279px;
+    border: 1px solid #e6e6e6;
+    margin-right: -4px;
+    margin-left: -1px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.searchButton {
+    margin: 0;
+    margin-left: -1px;
+    min-height: 38px;
+    width: 38px;
+    border: 1px solid #e6e6e6;
+    border-radius: 0px 3px 3px 0px;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #a4a4a4;
+    .changeColorMixin();
+    
+}
+
+@import "eyes.less";
+.searchButton:hover {
+    background-color: #f16d7f;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.addToCart {
+    margin-right: 26px;
+}
+
+.accountButton {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    width: 130px;
+    height: 38px;
+    background-color: #f16d7f;
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    border: none;
+    .changeColorMixin();
+    position: relative;
+}
+
+.dropAccount {
+    position: absolute;
+    left: -130px;
+    top: 40px;
+    width: 262px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19px;
+    z-index: -5;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.dropAccountList {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.dropAccountItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 16px 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.dropAccountItemDesc {
+    flex-grow: 1;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 10px 14px;
+}
+
+.dropAccountItemDesc span {
+    margin-bottom: 6px;
+}
+
+.dropAccItemTitle {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.dropAccItemVote {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #e4af48;
+}
+
+.dropAccItemPrice {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f16d7f;
+}
+
+.dropAccountTotal {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.dropAccountLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    margin: 6px 0;
+}
+
+.dropAccountLink:hover {
+    border: 1px solid #f16d7f;
+    color: @mainPinkColor;
+}
+
+.accountButton:hover {
+    outline: 1px solid #f16d7f;
+    color: #f16d7f;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.accountButton:hover .dropAccount {
+    z-index: 5;
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+
+/* =============== mainMenu block ========================*/
+
+.mainMenuItems {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.mainMenuItem {
+    height: 45px;
+}
+
+.mainMenuItem:hover {
+    border-bottom: 3px solid #f16d7f;
+}
+
+.mainMenuLinks {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.megaMenu {
+    position: absolute;
+    left: 17%;
+    top: 45px;
+    width: 846px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transform: scaleY(0);
+    z-index: -5;
+    transform-origin: top;
+}
+
+.megaMenuColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 27%;
+    margin: 0 20px;
+}
+
+.megaMenuBanner {
+    width: 255px;
+    height: 118px;
+    background-color: #efefef;
+    background-image: url(../img/superBanner.jpg);
+    padding: 61px 10px 12px 174px;
+    margin-top: 10px;
+}
+
+.bannerText {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.mainMenuItem:hover .megaMenu {
+    transform: scaleY(1);
+    z-index: 5;
+    transform-origin: top;
+}

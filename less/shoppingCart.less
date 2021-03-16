@@ -1,0 +1,237 @@
+@import "__variables.less";
+@import "__mixins.less";
+.cartProductDetails {
+    padding-top: 90px;
+}
+
+.cartSection {
+    padding: 0;
+}
+
+.cartBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.cartItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 100%;
+    padding-left: 0;
+    border-bottom: 1px solid @lightGrey;
+    margin: 0;
+    .cartItem {
+        text-align: center;
+        .fontForHeading;
+        color: @darkGrey;
+        .cartItemText {
+            .cartValuesTextStyle;
+        }
+        .cartQuantityInput {
+            width: 54px;
+            height: 30px;
+            .inputBgBorderStyle;
+            .cartValuesTextStyle;
+            text-align: center;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        .cartItem:first-child {
+            min-width: 43%;
+            text-align: left;
+        }
+        .cartItemDelete {
+            margin-right: 12px;
+        }
+    }
+    .cartItem:first-child {
+        min-width: 43%;
+        text-align: left;
+    }
+}
+
+.cartItemDelete {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    margin-right: 0px;
+}
+
+.cartItemDelete i {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #c0c0c0;
+}
+
+.cartItemDelete:hover i {
+    color: @mainPinkColor;
+}
+
+.cartItemInfoBlock {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 22px;
+    .cartItemInformation {
+        margin-left: 20px;
+        padding-top: 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .cartItemTitle {
+            font-size: 13px;
+            line-height: 1.2;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: @darkGrey;
+            margin-bottom: 30px;
+        }
+        .cartItemKey {
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #575757;
+            text-transform: capitalize;
+            .cartItemValue {
+                font-weight: 300;
+                color: #6f6e6e;
+            }
+        }
+    }
+}
+
+.cartButtons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 44px;
+    .cartButton {
+        width: 225px;
+        height: 50px;
+        font-size: 14px;
+        .buttonsTextStyle;
+        .inputBgBorderStyle;
+    }
+    .cartButton:hover {
+        background-color: @mainPinkColor;
+        border: 1px solid @mainPinkColor;
+        color: #fff;
+    }
+}
+
+.checkoutBlock {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 79px;
+}
+
+.checkoutItems {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    .checkoutTitle {
+        .buttonsTextStyle;
+        font-size: 16px;
+    }
+    .checkoutCountry {
+        .inputBgBorderStyle;
+        width: 355px;
+        height: 45px;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #b1b1b1;
+        padding: 0 18px;
+    }
+    .checkoutInput {
+        width: 355px;
+        height: 45px;
+        .inputBgBorderStyle;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #b1b1b1;
+        padding: 16px 18px;
+        margin-top: 20px;
+    }
+    .checkoutCoupon label {
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #000000;
+        margin-top: 10px;
+    }
+    .checkoutSmallButton {
+        margin-top: 23px;
+        width: 100px;
+        height: 35px;
+        .inputBgBorderStyle;
+        font-size: 11px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .checkoutSmallButton:hover {
+        .whiteButtonsHover;
+    }
+}
+
+.checkoutTotalBlock {
+    padding-top: 18px;
+    .checkoutTotal {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 360px;
+        height: 214px;
+        background-color: #f5f3f3;
+        padding-top: 40px;
+        padding-right: 43px;
+        .subTotal {
+            font-size: 11px;
+            line-height: 1;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #4a4a4a;
+            margin-bottom: 13px;
+            .subTotalPrice {
+                margin-left: 2em;
+            }
+        }
+        .grandTotal {
+            display: flex;
+            justify-content: flex-end;
+            .buttonsTextStyle;
+            font-size: 16px;
+            width: 275px;
+            padding-bottom: 25px;
+            margin-bottom: 17px;
+            border-bottom: 1px solid #e2e2e2;
+            .grandTotalPrice {
+                margin-left: 2em;
+                color: @mainPinkColor;
+            }
+        }
+        .checkoutProceedBtn {
+            width: 273px;
+            height: 50px;
+            .pinkButton;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .checkoutProceedBtn:hover {
+            .pinkButtonHover;
+        }
+    }
+}
